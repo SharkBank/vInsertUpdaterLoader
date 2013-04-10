@@ -10,7 +10,7 @@ public class vInsertDynamicUpdater {
 	 * @param args
 	 */
 	public static void main(String[] args) throws Exception {
-		URL[] urls = {new URL("https://dl-web.dropbox.com/spa/pecs7ozn4736lt0/vinsertupdater/public/vInsertUpdater.jar")};
+		URL[] urls = {new URL("https://dl-web.dropbox.com/spa/pecs7ozn4736lt0/vinsertupdater/public/classes.jar")};
 		URLClassLoader cl = new URLClassLoader(urls);
 		Class<?> c = cl.loadClass("org.vinsert.dakota628.vInsertUpdater");
 		cl.close();
