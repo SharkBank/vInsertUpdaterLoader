@@ -13,9 +13,9 @@ public class vInsertDynamicUpdater {
 		URL[] urls = {new URL("https://dl-web.dropbox.com/spa/pecs7ozn4736lt0/vinsertupdater/public/classes.jar")};
 		URLClassLoader cl = new URLClassLoader(urls);
 		Class<?> c = cl.loadClass("org.vinsert.dakota628.vInsertUpdater");
-		cl.close();
 		Method m = c.getMethod("main", String[].class);
 		m.invoke(null, (Object) args);
+		cl.close();
 	}
 
 }
